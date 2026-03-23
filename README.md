@@ -14,9 +14,11 @@ One-click deploy of [RabbitMQ](https://www.rabbitmq.com/) with the Management UI
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `RABBITMQ_DEFAULT_USER` | Admin username | `admin` |
-| `RABBITMQ_DEFAULT_PASS` | Admin password | Auto-generated |
+| `RABBITMQ_DEFAULT_USER` | Admin username | `guest` |
+| `RABBITMQ_DEFAULT_PASS` | Admin password | Set in template |
 | `RABBITMQ_DEFAULT_VHOST` | Default virtual host | `/` |
+
+> Set `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` in your Railway service variables. The public domain routes to the Management UI on port 15672.
 
 ## Ports
 
